@@ -48,129 +48,54 @@
     </header>
 
 
-    <main class="main-container">
-      <h1 class="visually-hidden"> Магазин изделий ручной работы Мишка</h1>
-      <section class="hero-section">
-        <div class="hero-section__wrapper">
-          <h2 class="hero-section__title">Милые штуки ручной работы для дома</h2>
-          <ul class="catalog-section-list">
-            <li class="catalog-section-list__item catalog-section-list__item--left">
-              <a class="catalog-section-link">
-                Предметы интерьера
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="62" viewBox="0 0 40 62" fill="none">
-                  <g opacity="0.5">
-                  <path d="M15.162 37.7167C14.8627 38.7119 14.9625 39.9061 15.162 41.2994C15.6607 43.8869 16.8577 47.2705 17.556 50.9527H22.6433C23.3415 47.3701 24.5385 43.9864 25.137 41.2994C25.4363 39.9061 25.4363 38.6124 25.137 37.7167C24.8378 36.821 24.2393 36.1244 23.142 35.4277H17.157C15.96 36.1244 15.3615 36.821 15.162 37.7167Z" fill="#149080"/>
-                  <path d="M26.9327 57.6211H13.1671C11.8703 57.6211 10.8728 58.6163 10.8728 59.8105V61.9999H13.1671H26.9327H29.2269V59.8105C29.2269 58.6163 28.2294 57.6211 26.9327 57.6211Z" fill="#149080"/>
-                  <path d="M34.015 2.18943H22.3441C22.3441 0.995194 21.3466 0 20.0499 0C18.7531 0 17.7556 0.995194 17.7556 2.18943H6.08478L0 27.5668C0.798005 27.0693 1.59602 26.5717 2.59352 26.5717C3.99003 26.5717 4.78803 27.3678 5.48629 27.9649C6.18454 28.562 6.68329 28.7611 6.88279 28.7611C7.18204 28.7611 7.68079 28.4625 8.37905 27.9649C9.0773 27.4673 9.97505 26.5717 11.2718 26.5717C12.5686 26.5717 13.4663 27.3678 14.1646 27.9649C14.8628 28.4625 15.3616 28.7611 15.6608 28.7611C15.7606 28.7611 15.9601 28.6616 16.2593 28.562C16.4588 28.4625 16.7581 28.164 17.1571 27.9649C17.6559 27.5668 18.2544 26.9697 19.1521 26.7707C19.4514 26.6712 19.7506 26.6712 20.0499 26.6712C21.3466 26.6712 22.2444 27.4673 22.9426 28.0644C23.6409 28.562 24.1397 28.8606 24.4389 28.8606C24.7382 28.8606 25.2369 28.562 25.8354 28.0644C26.5337 27.4673 27.4314 26.6712 28.7282 26.6712C30.1247 26.6712 30.9227 27.4673 31.621 28.0644C31.9202 28.363 32.2194 28.562 32.5187 28.6616C32.7182 28.7611 32.9177 28.8606 33.1172 28.8606C33.4165 28.8606 33.9152 28.562 34.5137 27.9649C35.212 27.3678 36.1097 26.5717 37.4065 26.5717C38.404 26.5717 39.202 27.0693 40 27.5668L34.015 2.18943Z" fill="#149080"/>
-                  <path d="M23.4415 53.1426H16.5587C15.8604 53.1426 15.4614 53.6402 15.4614 54.2373C15.4614 54.8344 15.9602 55.332 16.5587 55.332H23.4415C24.1397 55.332 24.5387 54.8344 24.5387 54.2373C24.6385 53.6402 24.1397 53.1426 23.4415 53.1426Z" fill="#149080"/>
-                  <path d="M20.0499 28.7598C19.9501 28.7598 19.7506 28.8593 19.4514 28.9588C19.2519 29.0583 19.0524 29.2574 18.8529 29.3569V33.0391H21.1471V29.4564C20.6484 29.0583 20.2494 28.7598 20.0499 28.7598Z" fill="#149080"/>
-                  </g>
-                </svg>
+    <main class="main-catalog">
+      <h1 class="main-catalog__title">Каталог товаров</h1>
+      <section class="catalog-items">
+        <div class="catalog-items__wrapper">
+          <h2 class="visually-hiden">Карточки товаров</h2>
+          <ul class="catalog-items__list">
+            <li class="catalog-items__item product-card">
+              <a class="product-card__link">
+                <img class="product-card__img" width="260" height="195" src="#" alt="#">
               </a>
+              <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
+              <p class="product-card__characteristic">Рост 30 см, вес 200 г</p>
+              <hr>
+              <p class="product-card__price">1 200 руб.</p>
+              <a class="product-card__cart"></a>
             </li>
-            <li class="catalog-section-list__item">
-              <a class="catalog-section-link">
-                Детские игрушки
-                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
-                  <path opacity="0.5" d="M0 43.9933L27.4 60V36.5436L0 20.4362V43.9933ZM51.3 12.4832V15C51.3 16.8121 47.8 18.3221 43.6 18.3221C39.3 18.3221 35.9 16.8121 35.9 15V10.8725C36.2 12.5839 39.5 13.9933 43.6 13.9933C47.9 13.9933 51.3 12.4832 51.3 10.6711C51.3 8.85907 47.8 7.349 43.6 7.349C43.3 7.349 42.9 7.349 42.6 7.349L37.6 4.42954V7.55034C37.6 9.36242 34.1 10.8725 29.9 10.8725C27.2 10.8725 24.9 10.2685 23.5 9.36242C23.3 9.16108 23.1 8.95973 22.8 8.75839C22.4 8.3557 22.2 7.95302 22.2 7.55034V4.5302L17.4 7.349C17.1 7.349 16.7 7.349 16.3 7.349C12 7.349 8.60001 8.85907 8.60001 10.6711C8.60001 12.4832 12.1 13.9933 16.3 13.9933C20.4 13.9933 23.7 12.5839 24 10.8725V15C24 16.8121 20.5 18.3221 16.3 18.3221C12 18.3221 8.60001 16.8121 8.60001 15V12.5839L2.60001 16.1074L30.1 32.2148L57.5 16.2081L51.3 12.4832ZM37.7 22.7517C37.7 24.5638 34.2 26.0738 30 26.0738C25.7 26.0738 22.3 24.5638 22.3 22.7517V18.6242C22.6 20.3356 25.9 21.745 30 21.745C34.1 21.745 37.4 20.3356 37.7 18.6242V22.7517ZM32.6 36.745V60L60 43.9933V20.7383L32.6 36.745ZM29.9 6.6443C34.2 6.6443 37.6 5.13423 37.6 3.32215C37.6 1.51007 34.1 0 29.9 0C25.6 0 22.2 1.51007 22.2 3.32215C22.2 5.13423 25.6 6.6443 29.9 6.6443Z" fill="#149080"/>
-                </svg>
+            <li class="catalog-items__item product-card">
+              <a class="product-card__link">
+                <img class="product-card__img" width="260" height="195" src="#" alt="#">
               </a>
+              <h3 class="product-card__title">Корзинка для белья</h3>
+              <p class="product-card__characteristic">Диаметр 15 см, высота 10 см</p>
+              <hr>
+              <p class="product-card__price">690 руб.</p>
+              <a class="product-card__cart"></a>
+            </li>
+            <li class="catalog-items__item product-card">
+              <a class="product-card__link">
+                <img class="product-card__img" width="260" height="195" src="#" alt="#">
+              </a>
+              <h3 class="product-card__title">Большая корзинка для игрушек</h3>
+              <p class="product-card__characteristic">Диаметр 30 см, высота 30 см</p>
+              <hr>
+              <p class="product-card__price">1 500 руб.</p>
+              <a class="product-card__cart"></a>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="products-of-the-week">
-        <h3 class="products-of-the-week__product-title">Вязаные корзинки</h3>
-        <h2 class="products-of-the-week__title">ТОВАР НЕДЕЛИ</h2>
-        <p class="products-of-the-week__description">Экологически чистая пряжа,
-          ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-        <dl class="products-of-the-week__list">
-          <div class="products-of-the-week__item">
-            <dt class="products-of-the-week__characteristic">
-              Цвет:
-            </dt>
-            <dd class="products-of-the-week__value">
-              тиффани/серый
-            </dd>
-          </div>
-          <div class="products-of-the-week__item">
-            <dt class="products-of-the-week__characteristic">
-              Диаметр:
-            </dt>
-            <dd class="products-of-the-week__value">
-              25 см
-            </dd>
-          </div>
-          <div class="products-of-the-week__item">
-            <dt class="products-of-the-week__characteristic">
-              Высота:
-            </dt>
-            <dd class="products-of-the-week__value">
-              15 см
-            </dd>
-          </div>
-        </dl>
-        <img class="products-of-the-week__img" width="260" height="315" alt="Вязанные корзинки." src="#">
-        <p class="products-of-the-week__price">Цена: 990 руб.</p>
-        <a class="products-of-the-week__buy main-button">
-          ЗАКАЗАТЬ
-        </a>
-      </section>
-
-      <section class="about-us">
-        <div class="about-us__wrapper">
-          <h2 class="about-us__title">Коротко о нас:</h2>
-          <ul class="about-us__list">
-            <li class="about-us__item about-us__item--flower">Экологически чистые материалы</li>
-            <li class="about-us__item about-us__item--money">Скандинавский стиль по российской цене</li>
-            <li class="about-us__item about-us__item--heart">Увеличивает лайкина фотографиях</li>
-            <li class="about-us__item about-us__item--yarn">Связано вручную
-              с любовью и умилением</li>
-            <li class="about-us__item about-us__item--rocket">Поддержка отечественного производителя</li>
-            <li class="about-us__item about-us__item--gift">Поставляется
-              в подарочной упаковке</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="reviews">
-        <div class="reviews__wrapper slider">
-          <h2 class="reviews__title">Отзывы</h2>
-          <ul class="reviews__list slider__list">
-            <li class="reviews__item slider__item">
-              <blockquote class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
-                у популярных инстамамочек.
-                В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-                и мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
-                <cite class="reviews__author">Анастасия Красильникова <span class="reviews__id">@misssssiskras</span></cite>
-            </li>
-          </ul>
-          <button class="slider__button slider__button--left"></button>
-          <button class="slider__button"></button>
-          <a class="reviews__write-review main-button">Написать</a>
+      <section class="production">
+        <div class="production__wrapper">
+          <h2 class="production__title">Процесс производства</h2>
+          <div class="production__video"></div>
+          <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="production__button main-button">СДелать заказ</a>
         </div>
 
-      </section>
-
-      <section class="contacts">
-        <div class="contacts__wrapper">
-          <h2 class="contacts__title">Контакты</h2>
-          <dl class="contacts__list">
-            <div class="contacts__item">
-              <dt class="contacts__characteristic">e-mail:</dt>
-              <dd class="contacts__value">
-                <a class="mail-link">info@mimimishkashop.ru</a>
-                </dd>
-            </div>
-            <div class="contacts__item">
-              <dt class="contacts__characteristic">адрес:</dt>
-              <dd class="contacts__value">г. Санкт-Петербургул. Большая Конюшеннаяд. 19/8, офис 101</dd>
-            </div>
-          </dl>
-          <div class="contacts__map"></div>
-          <a class="contacts__write-us main-button">НАпишите нам</a>
-        </div>
       </section>
     </main>
 
