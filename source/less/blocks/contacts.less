@@ -1,29 +1,28 @@
 .contacts {
-  background-color: #ffffff;
+  background-color: @white;
 }
 
 .contacts__title {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
+  .text-settings();
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  color: #000000;
+  color: @dark;
 }
 
-.contacts-text-setings() {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
+
+.contacts__characteristic {
+  .text-settings();
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  color: #444444;
-}
-
-.contacts__characteristic {
-  .contacts-text-setings();
+  color: @grey;
 }
 
 .contacts__value {
-  .contacts-text-setings();
+  .text-settings();
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: @grey;
 }
