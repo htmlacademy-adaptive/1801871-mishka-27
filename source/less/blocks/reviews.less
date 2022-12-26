@@ -2,6 +2,20 @@
   background-color: @white;
 }
 
+.reviews__wrapper {
+  margin: 0 auto;
+  width: 81.25%;
+  position: relative;
+
+  @media (min-width: @tablets-width) {
+    width: 86.97%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 91.13%;
+  }
+}
+
 .reviews__title {
   .text-settings();
   font-weight: 700;
@@ -32,4 +46,20 @@
   font-size: 17px;
   line-height: 24px;
   color: @dark;
+}
+
+.reviews__slider-button-container {
+  @media (min-width: @tablets-width) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.reviews__write-review {
+  @media (min-width: @tablets-width) {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }

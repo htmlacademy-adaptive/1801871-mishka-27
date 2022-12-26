@@ -2,6 +2,19 @@
   background-color: @white;
 }
 
+.about-us__wrapper {
+  margin: 0 auto;
+  width: 81.25%;
+
+
+  @media (min-width: @tablets-width) {
+    width: 86.97%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 91.13%;
+  }
+}
 
 .about-us__title {
   .text-settings();
@@ -17,4 +30,16 @@
   font-size: 17px;
   line-height: 20px;
   color: @dark;
+}
+
+.about-us__list-container {
+  @media (min-width: @tablets-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+.about-us__list {
+  list-style: none;
 }

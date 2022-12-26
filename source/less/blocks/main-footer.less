@@ -2,10 +2,34 @@
   background-color: #f1f1f1;
 }
 
+.main-footer__wrapper {
+  margin: 0 auto;
+  width: 81.25%;
+
+
+  @media (min-width: @tablets-width) {
+    width: 86.97%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 91.13%;
+  }
+}
+
 .main-footer__copyright {
   .text-settings();
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
   color: @dark;
+}
+
+.main-footer__logo {
+  display: none;
+
+  @media (min-width: @tablets-width) {
+    display: block;
+  }
 }

@@ -2,6 +2,167 @@
   background-color: @white;
 }
 
+.form__title-text-wrapper {
+  margin: 0 auto;
+  width: 81.25%;
+
+
+  @media (min-width: @tablets-width) {
+    width: 86.97%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 91.13%;
+  }
+}
+
+.form__type-wrapper {
+  width: 81.25%;
+  margin: 0 auto;
+
+
+  @media (min-width: @tablets-width) {
+    width: 86.97%;
+    display: grid;
+    grid-template-columns: 169px 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 91.13%;
+  }
+}
+// сетки для типа
+.form__type-legend {
+  @media (min-width: @tablets-width) {
+    grid-column: 1/2;
+  }
+}
+
+.form__type-radio-first {
+  @media (min-width: @tablets-width) {
+    grid-column: 2/3;
+  }
+}
+
+.form__type-radio-second {
+  @media (min-width: @tablets-width) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+// сетки для цвета
+.form__color {
+  @media (min-width: @tablets-width) {
+    background-color: @light-white;
+  }
+}
+
+.form__color-wrapper {
+  width: 81.25%;
+  margin: 0 auto;
+
+
+  @media (min-width: @tablets-width) {
+    width: 86.97%;
+    display: grid;
+    grid-template-columns: 169px 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 91.13%;
+    grid-template-columns: 169px 1fr 1fr 1fr;
+  }
+}
+
+.form__color-legend {
+  @media (min-width: @tablets-width) {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+}
+// сетки для блока с фио
+.form__id-wrapper {
+  width: 81.25%;
+  margin: 0 auto;
+
+
+  @media (min-width: @tablets-width) {
+    width: 86.97%;
+    display: grid;
+    grid-template-columns: 169px 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 91.13%;
+  }
+}
+
+.form__id-legend {
+  @media (min-width: @tablets-width) {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+}
+// сетки дял телефона и почты
+.form__tel-email-wrapper {
+  width: 81.25%;
+  margin: 0 auto;
+
+
+  @media (min-width: @tablets-width) {
+    width: 86.97%;
+    display: grid;
+    grid-template-columns: 169px 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 91.13%;
+  }
+}
+
+.form__tel-email-legend {
+  @media (min-width: @tablets-width) {
+    grid-column: 1/2;
+  }
+}
+
+.form__tel-email {
+  @media (min-width: @tablets-width) {
+    background-color: @light-white;
+  }
+}
+// Доп врапер
+.form__wish-wrapper {
+  width: 81.25%;
+  margin: 0 auto;
+
+
+  @media (min-width: @tablets-width) {
+    width: 86.97%;
+    display: grid;
+    grid-template-columns: 169px 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 91.13%;
+  }
+}
+// сетки кнопки и рекваерид
+
+.form__requered-button-wrapper {
+  width: 81.25%;
+  margin: 0 auto;
+
+  @media (min-width: @tablets-width) {
+    width: 86.97%;
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 91.13%;
+  }
+}
+
 .form__text {
   .text-settings();
   font-weight: 400;

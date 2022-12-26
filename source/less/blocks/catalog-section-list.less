@@ -1,5 +1,15 @@
+.catalog-section-list {
+  @media (min-width: @tablets-width) {
+    display: flex;
+  }
+}
+
 .catalog-section-list__item {
   background-color: @aqua-light;
+
+  @media (min-width: @tablets-width) {
+    flex-grow: 1;
+  }
 }
 
 .catalog-section-list__item--left {

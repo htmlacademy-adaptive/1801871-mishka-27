@@ -13,3 +13,32 @@
   line-height: 24px;
   color: @grey;
 }
+
+.production__wrapper {
+  width: 81.25%;
+  margin: 0 auto;
+
+  @media (min-width: @tablets-width) {
+    width: 86.97%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 91.13%;
+    display: grid;
+    grid-template-columns: 682px 1fr;
+  }
+}
+
+.production__video {
+  @media (min-width: @tablets-width) {
+    order: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 0;
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+}

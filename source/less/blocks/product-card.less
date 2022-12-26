@@ -21,3 +21,26 @@
   line-height: 24px;
   color: @dark;
 }
+
+.product-card {
+  @media (min-width: @tablets-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.product-card__link {
+  @media (min-width: @tablets-width) {
+    grid-column: 1/2;
+  }
+}
+
+.product-card__text-container {
+  @media (min-width: @tablets-width) {
+    grid-column: 2/3;
+  }
+}
