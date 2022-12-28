@@ -4,24 +4,20 @@
 }
 
 .product-of-the-week__wrapper {
-  margin: 0 auto;
+  .wrapper ();
   box-sizing: border-box;
-  width: 81.25%;
   position: relative;
 
   @media (min-width: @tablets-width) {
-    width: 86.97%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: auto auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: 91.13%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 169px calc(50% - 169px) 50%;
     grid-template-rows: auto min(483px);
-    padding-left: 175px;
   }
 }
 
@@ -43,6 +39,7 @@
   @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    grid-column: 2/4;
   }
 }
 
@@ -56,12 +53,11 @@
   @media (min-width: @tablets-width) {
     line-height: 17px;
 
-    position: absolute;
-    right: 0;
+    grid-column: 3/4;
   }
 
   @media (min-width: @desktop-width) {
-    left: 0;
+    grid-column: 1/2;
   }
 }
 
@@ -106,6 +102,10 @@
     grid-column: 1/2;
     grid-row: 2/3;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 2/3;
+  }
 }
 
 .product-of-the-week__price-button-container {
@@ -116,16 +116,20 @@
     grid-row: 2/3;
     align-self: flex-end;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 2/3;
+  }
 }
 
 .product-of-the-week__img {
   @media (min-width: @tablets-width) {
-    grid-column: 2/3;
+    grid-column: 2/4;
     grid-row: 2/3;
   }
 
   @media (min-width: @desktop-width) {
-    grid-column: 2/3;
+    grid-column: 3/4;
     grid-row: 1/3;
   }
 }

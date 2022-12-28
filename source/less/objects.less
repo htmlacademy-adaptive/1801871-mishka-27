@@ -7,11 +7,29 @@
 @light-white:#f1f1f1;
 // Cемейства шрифтов
 @font:"Open Sans", "Arial", sans-serif;
-//миксины
-.text-settings() {
-  font-family: @font;
-  font-style: normal;
-};
 // Viewports
 @tablets-width:768px;
 @desktop-width: 1150px;
+//переменные для резиновой верстки
+@mobile:81.25%;
+@tablets:86.97%;
+@desktop:91.13%;
+
+//миксины
+.text-settings () {
+  font-family: @font;
+  font-style: normal;
+};
+
+.wrapper () {
+  width: @mobile;
+  margin: 0 auto;
+
+  @media (min-width: @tablets-width) {
+    width: @tablets;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: desktop;
+  }
+};
