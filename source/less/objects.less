@@ -5,16 +5,29 @@
 @aqua-light:#56c3b2;
 @grey: #444444;
 @light-white:#f1f1f1;
+@black:#231F20;
+@grey-light: #ECECEC;
 // Cемейства шрифтов
 @font:"Open Sans", "Arial", sans-serif;
 // Viewports
+@mobile-only:767px;
 @tablets-width:768px;
 @desktop-width: 1150px;
 //переменные для резиновой верстки
 @mobile:81.25%;
 @tablets:86.97%;
 @desktop:91.13%;
-
+// визуали хидден
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 //миксины
 .text-settings () {
   font-family: @font;
