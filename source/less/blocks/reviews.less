@@ -1,39 +1,82 @@
 .reviews {
-  background-color: #ffffff;
+  background-color: @white;
+}
+
+.reviews__wrapper {
+  .wrapper ();
+  position: relative;
+
+  @media (min-width: @tablets-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 91.13%;
+  }
 }
 
 .reviews__title {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
+  .text-settings();
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  color: #000000;
+  color: @dark;
+
+  @media (min-width: @tablets-width) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+.reviews__list {
+  @media (min-width: @tablets-width) {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
 }
 
 .reviews__text {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
+  .text-settings();
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
-  color: #444444;
+  color: @grey;
 }
 
 .reviews__author {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
+  .text-settings();
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: #000000;
+  color: @dark;
 }
 
 .reviews__id {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
+  .text-settings();
   font-weight: 400;
   font-size: 17px;
   line-height: 24px;
-  color: #000000;
+  color: @dark;
+}
+
+.reviews__slider-button-container {
+  @media (min-width: @tablets-width) {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+}
+
+.reviews__write-review {
+  @media (min-width: @tablets-width) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+}
+
+.reviews__cite {
+  @media (min-width: @tablets-width) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
 }

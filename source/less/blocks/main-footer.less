@@ -2,11 +2,27 @@
   background-color: #f1f1f1;
 }
 
+.main-footer__wrapper {
+  .wrapper ();
+
+  @media (min-width: @tablets-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .main-footer__copyright {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
+  .text-settings();
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
-  color: #000000;
+  color: @dark;
+}
+
+.main-footer__logo {
+  display: none;
+
+  @media (min-width: @tablets-width) {
+    display: block;
+  }
 }

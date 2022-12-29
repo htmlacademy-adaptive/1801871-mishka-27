@@ -1,17 +1,41 @@
 .production__title {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
+  .text-settings();
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: #000000;
+  color: @dark;
 }
 
 .production__text {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
+  .text-settings();
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  color: #444444;
+  color: @grey;
+}
+
+.production__wrapper {
+  .wrapper ();
+
+  @media (min-width: @tablets-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 682px 1fr;
+  }
+}
+
+.production__video {
+  @media (min-width: @tablets-width) {
+    order: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 0;
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
 }

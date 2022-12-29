@@ -1,31 +1,148 @@
 .form {
-  background-color: #ffffff;
+  background-color: @white;
 }
-.form-text-settings() {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
+
+.form__title-text-wrapper {
+  .wrapper ();
+}
+
+.form__type-wrapper {
+  .wrapper ();
+
+  @media (min-width: @tablets-width) {
+    display: grid;
+    grid-template-columns: 169px 1fr;
+  }
+}
+// сетки для типа
+.form__type-legend {
+  @media (min-width: @tablets-width) {
+    grid-column: 1/2;
+  }
+}
+
+.form__type-radio-first {
+  @media (min-width: @tablets-width) {
+    grid-column: 2/3;
+  }
+}
+
+.form__type-radio-second {
+  @media (min-width: @tablets-width) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+// сетки для цвета
+.form__color {
+  @media (min-width: @tablets-width) {
+    background-color: @light-white;
+  }
+}
+
+.form__color-wrapper {
+  .wrapper ();
+
+  @media (min-width: @tablets-width) {
+    display: grid;
+    grid-template-columns: 169px 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 169px 1fr 1fr 1fr;
+  }
+}
+
+.form__color-legend {
+  @media (min-width: @tablets-width) {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+}
+// сетки для блока с фио
+.form__id-wrapper {
+  .wrapper ();
+
+  @media (min-width: @tablets-width) {
+    display: grid;
+    grid-template-columns: 169px 1fr;
+  }
+}
+
+.form__id-legend {
+  @media (min-width: @tablets-width) {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+}
+// сетки дял телефона и почты
+.form__tel-email-wrapper {
+  .wrapper ();
+
+  @media (min-width: @tablets-width) {
+
+    display: grid;
+    grid-template-columns: 169px 1fr;
+  }
+}
+
+.form__tel-email-legend {
+  @media (min-width: @tablets-width) {
+    grid-column: 1/2;
+  }
+}
+
+.form__tel-email {
+  @media (min-width: @tablets-width) {
+    background-color: @light-white;
+  }
+}
+// Доп врапер
+.form__wish-wrapper {
+  .wrapper ();
+
+  @media (min-width: @tablets-width) {
+    display: grid;
+    grid-template-columns: 169px 1fr;
+  }
+}
+// сетки кнопки и рекваерид
+
+.form__requered-button-wrapper {
+  .wrapper ();
+
+  @media (min-width: @tablets-width) {
+
+    display: flex;
+  }
 }
 
 .form__text {
-  .form-text-settings();
+  .text-settings();
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  color: #444444;
+  color: @grey;
 }
 
 .form__legend {
-  .form-text-settings();
+  .text-settings();
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
-  color: #63d1bb;
+  color: @aqua;
 }
 
 .form__requered {
-  .form-text-settings();
+  .text-settings();
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #444444;
+  color: @grey;
+
+  @media (min-width: @tablets-width) {
+
+
+    order: 1;
+  }
 }

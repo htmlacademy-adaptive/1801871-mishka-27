@@ -1,22 +1,35 @@
 .about-us {
-  background-color: #ffffff;
+  background-color: @white;
 }
 
+.about-us__wrapper {
+  .wrapper ();
+}
 
 .about-us__title {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
+  .text-settings();
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  color: #000000;
+  color: @dark;
 }
 
 .about-us__item {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
+  .text-settings();
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  color: #000000;
+  color: @dark;
+}
+
+.about-us__list-container {
+  @media (min-width: @tablets-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+.about-us__list {
+  list-style: none;
 }
