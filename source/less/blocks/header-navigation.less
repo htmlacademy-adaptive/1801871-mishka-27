@@ -1,7 +1,25 @@
 .header-navigation {
+  width: 100%;
+  background-color: @white;
+  overflow: hidden;
+}
+
+.header-navigation--opened {
+  @media (max-width: @mobile-only) {
+    position: absolute;
+    top: 0;
+    left: auto;
+    z-index: 10;
+  }
+}
+
+.header-navigation__wrapper {
   background-color: @white;
   position: relative;
   padding-top: 22px;
+
+
+  .wrapper ();
 
   @media (min-width: @tablets-width) {
     display: grid;
@@ -28,6 +46,10 @@
     opacity: 0.6;
   }
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablets-width) {
     font-size: 15px;
   }
@@ -41,12 +63,22 @@
   color: @dark;
   text-decoration: none;
 
-  &:hover {
+  &:hover .header-navigation__list-second-link-text {
     opacity: 0.6;
+  }
+
+  &:active .header-navigation__list-second-link-text {
+    opacity: 0.3;
   }
 }
 
-.header-navigation__list-third-link {
+.header-navigation__list-second-link-text--hidde {
+  @media (min-width: @tablets-width) {
+    display: none;
+  }
+}
+
+.vigation__list-third-link {
   .text-settings();
   font-weight: 700;
   font-size: 15px;
@@ -56,6 +88,10 @@
 
   &:hover {
     opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -189,7 +225,7 @@
 
 .header-navigation__list-first-item {
   @media (max-width: @mobile-only) {
-    padding: 27px 20px 27px 46px;
+    padding: 28.5px 20px 26.5px 46px;
     position: relative;
 
     &::after {
@@ -234,12 +270,25 @@
 }
 
 .header-navigation__list-second-link-picture {
+  opacity: 0.2;
+
   @media (max-width: @mobile-only) {
     position: absolute;
     left: 0;
     top: auto;
   }
 }
+
+.header-navigation__list-second-link:hover .header-navigation__list-second-link-picture {
+  fill: @aqua;
+  opacity: 1;
+}
+
+.header-navigation__list-second-link:active .header-navigation__list-second-link-picture {
+  fill: @aqua;
+  opacity: 0.3;
+}
+
 
 .header-navigation__delivery-notice {
   display: none;
@@ -253,11 +302,5 @@
   @media (min-width: @desktop-width) {
     grid-column: 3/4;
     grid-row: 2/3;
-  }
-}
-
-.header-navigation__list-second-hidde-text {
-  @media (min-width: @tablets-width) {
-    display: none;
   }
 }
