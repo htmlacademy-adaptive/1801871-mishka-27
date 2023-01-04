@@ -1,8 +1,9 @@
 
 .hero-section {
-  background-image: url("../img/background/hero-background.jpg");
-  background-color: #fafafa;
+  background-image: url("../img/backgrounds/hero-background.jpg");
+  background-color: @grey-concrete;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .hero-section__title {
@@ -11,8 +12,28 @@
   font-size: 27px;
   line-height: 30px;
   color: @dark;
+
+  margin: 0;
+  margin-bottom: 120px;
 }
 
 .hero-section__wrapper {
   .wrapper ();
+  padding-top: 74px;
+  text-align: center;
+  position: relative;
+
+  @media (min-width: @tablets-width) {
+    &::before {
+      content: "";
+      background-image: url("../img/sampels/wave.svg");
+      position: absolute;
+      height: 34px;
+      width: 2000px;
+      bottom: -10px;
+      left: -500px;
+      z-index: 10;
+      background-repeat: repeat-x;
+    }
+  }
 }
