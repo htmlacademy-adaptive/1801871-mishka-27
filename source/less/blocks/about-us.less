@@ -4,6 +4,15 @@
 
 .about-us__wrapper {
   .wrapper ();
+  margin-bottom: 58px;
+
+  @media (min-width: @tablets-width) {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .about-us__title {
@@ -12,6 +21,10 @@
   font-size: 25px;
   line-height: 30px;
   color: @dark;
+
+  margin: 0;
+  margin-bottom: 28px;
+  text-align: left;
 }
 
 .about-us__item {
@@ -20,16 +33,115 @@
   font-size: 17px;
   line-height: 20px;
   color: @dark;
-}
 
-.about-us__list-container {
-  @media (min-width: @tablets-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+  padding-top: 54px;
+  margin-bottom: 30px;
+
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+
+  &--flower {
+    grid-area: f;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 33px;
+      height: 38px;
+      background-image: url("../img/icons/about-us-icons/flower.svg");
+    }
+  }
+
+  &--money {
+    grid-area: m;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 47px;
+      height: 27px;
+      background-image: url("../img/icons/about-us-icons/money.svg");
+    }
+  }
+
+  &--heart {
+    grid-area: h;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 34px;
+      height: 27px;
+      background-image: url("../img/icons/about-us-icons/heart.svg");
+    }
+  }
+
+  &--yarn {
+    grid-area: y;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 35px;
+      height: 34px;
+      background-image: url("../img/icons/about-us-icons/yarn.svg");
+    }
+  }
+
+  &--rocket {
+    grid-area: r;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 55px;
+      height: 23px;
+      background-image: url("../img/icons/about-us-icons/rocket.svg");
+    }
+  }
+
+  &--gift {
+    grid-area: g;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 33px;
+      height: 33px;
+      background-image: url("../img/icons/about-us-icons/gift.svg");
+    }
   }
 }
 
 .about-us__list {
   list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablets-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "f y"
+      "m r"
+      "h g";
+    column-gap: 100px;
+  }
 }

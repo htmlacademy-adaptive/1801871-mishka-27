@@ -4,6 +4,7 @@
   background-color: @grey-concrete;
   background-repeat: no-repeat;
   overflow: hidden;
+  margin-bottom: 40px;
 }
 
 .hero-section__title {
@@ -29,11 +30,17 @@
       background-image: url("../img/sampels/wave.svg");
       position: absolute;
       height: 34px;
-      width: 2000px;
+      width: 3000px;
       bottom: -10px;
       left: -500px;
       z-index: 10;
       background-repeat: repeat-x;
     }
+  }
+}
+
+.hero-section__br-in-title {
+  @media (min-width: @tablets-width) {
+    display: none;
   }
 }

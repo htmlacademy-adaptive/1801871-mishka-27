@@ -5,6 +5,7 @@
 .contacts__wrapper {
   .wrapper ();
   position: relative;
+  margin-bottom: 62px;
 
   @media (min-width: @desktop-width) {
     display: grid;
@@ -20,6 +21,9 @@
   line-height: 30px;
   color: @dark;
 
+  margin: 0;
+  margin-bottom: 28px;
+
   @media (min-width: @desktop-width) {
     grid-column: 1/2;
   }
@@ -32,6 +36,8 @@
   font-size: 14px;
   line-height: 30px;
   color: @grey;
+
+  margin-right: 30px;
 }
 
 .contacts__value {
@@ -40,13 +46,24 @@
   font-size: 14px;
   line-height: 30px;
   color: @grey;
+
+  margin: 0;
 }
 
 .contacts__item {
   display: flex;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__list {
+  margin: 0;
+
+
+
   @media (min-width: @tablets-width) {
     display: flex;
   }
@@ -55,6 +72,10 @@
     grid-column: 1/2;
     display: block;
   }
+}
+
+.contacts__write-us-wrapper {
+  .wrapper();
 }
 
 .contacts__write-us {
