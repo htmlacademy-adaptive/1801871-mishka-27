@@ -1,4 +1,22 @@
 .socials {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
+
+  border-bottom: 1px solid @grey-darker;
+  align-items: center;
+}
+
+.socials__item {
+  margin-right: 30px;
+  height: 22px;
+
+  &:first-child {
+    margin-left: auto;
+  }
+
+  &:last-child {
+    margin-right: auto;
+  }
 }

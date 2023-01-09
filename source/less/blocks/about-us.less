@@ -4,14 +4,11 @@
 
 .about-us__wrapper {
   .wrapper ();
-  margin-bottom: 58px;
-
-  @media (min-width: @tablets-width) {
-    margin-bottom: 52px;
-  }
+  box-sizing: border-box;
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 60px;
+    padding-left: 175px;
+    padding-right: 200px;
   }
 }
 
@@ -25,6 +22,18 @@
   margin: 0;
   margin-bottom: 28px;
   text-align: left;
+
+  @media (min-width: @tablets-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 41.5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 39px;
+  }
 }
 
 .about-us__item {
