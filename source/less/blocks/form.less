@@ -61,7 +61,7 @@
     background-color: @light-white;
     padding: 50px 0;
 
-    margin-bottom: 67px;
+    margin-bottom: 50px;
   }
 }
 
@@ -106,6 +106,12 @@
   margin: 0;
   border: 0;
   padding: 0;
+
+  margin-bottom: 34.5px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .form__id-wrapper {
@@ -118,9 +124,13 @@
 }
 
 .form__id-legend {
+  margin-bottom: 28.85px;
+
   @media (min-width: @tablets-width) {
     grid-column: 1/2;
     grid-row: 1/4;
+
+    margin-top: 17px;
   }
 }
 // сетки дял телефона и почты
@@ -179,6 +189,15 @@
     line-height: 30px;
   }
 }
+
+.form__text-input {
+  margin-bottom: 21.85px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 
 .form__legend {
   .text-settings();
