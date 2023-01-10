@@ -14,14 +14,30 @@
     grid-template-columns: 169px 1fr;
   }
 }
+
+.form__type {
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 35px;
+
+  @media (min-width: @tablets-width) {
+    margin-bottom: 50px;
+  }
+}
 // сетки для типа
 .form__type-legend {
+  margin-bottom: 30px;
+
   @media (min-width: @tablets-width) {
     grid-column: 1/2;
   }
 }
 
 .form__type-radio-first {
+  margin-bottom: 11px;
+
   @media (min-width: @tablets-width) {
     grid-column: 2/3;
   }
@@ -35,17 +51,29 @@
 }
 // сетки для цвета
 .form__color {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  margin-bottom: 23px;
+
   @media (min-width: @tablets-width) {
     background-color: @light-white;
+    padding: 50px 0;
+
+    margin-bottom: 67px;
   }
 }
 
 .form__color-wrapper {
   .wrapper ();
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: @tablets-width) {
     display: grid;
     grid-template-columns: 169px 1fr 1fr;
+    row-gap: 23px;
   }
 
   @media (min-width: @desktop-width) {
@@ -54,12 +82,32 @@
 }
 
 .form__color-legend {
+  margin-bottom: 25px;
+
   @media (min-width: @tablets-width) {
     grid-column: 1/2;
     grid-row: 1/4;
   }
 }
+
+.form__color-checkbox {
+  @media (max-width: @mobile-only) {
+    margin-bottom: 23px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
 // сетки для блока с фио
+.form__id {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
 .form__id-wrapper {
   .wrapper ();
 
@@ -123,6 +171,13 @@
   font-size: 13px;
   line-height: 24px;
   color: @grey;
+
+  margin: 0;
+
+  @media (min-width: @tablets-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .form__legend {
@@ -131,6 +186,20 @@
   font-size: 17px;
   line-height: 16px;
   color: @aqua;
+
+  position: relative;
+
+  @media (max-width: @mobile-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: calc(100% - 60px);
+      background-color: @aqua;
+      left: 60px;
+      top: 8px;
+    }
+  }
 }
 
 .form__requered {
