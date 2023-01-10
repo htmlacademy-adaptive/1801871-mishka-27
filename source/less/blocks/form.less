@@ -109,7 +109,7 @@
 
   margin-bottom: 34.5px;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @tablets-width) {
     margin-bottom: 50px;
   }
 }
@@ -145,16 +145,44 @@
 }
 
 .form__tel-email-legend {
+  margin-bottom: 4.5px;
+
   @media (min-width: @tablets-width) {
     grid-column: 1/2;
+    margin-top: 17.5px;
   }
 }
 
-.form__tel-email {
+.form__email {
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 34.5px;
+
   @media (min-width: @tablets-width) {
     background-color: @light-white;
+    padding-bottom: 50px;
+
+    margin-bottom: 50px;
   }
 }
+
+.form__tel {
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 34.5px;
+
+  @media (min-width: @tablets-width) {
+    background-color: @light-white;
+    padding-top: 50px;
+    padding-bottom: 24px;
+    margin-bottom: 0;
+  }
+}
+
 // Доп врапер
 .form__wish-wrapper {
   .wrapper ();
@@ -163,6 +191,20 @@
     display: grid;
     grid-template-columns: 169px 1fr;
   }
+}
+
+.form__wish-legend {
+  margin-bottom: 22.5px;
+
+  @media (min-width: @tablets-width) {
+    margin-top: 22px;
+  }
+}
+
+.form__text-area {
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 17px;
 }
 // сетки кнопки и рекваерид
 
@@ -192,12 +234,18 @@
 
 .form__text-input {
   margin-bottom: 21.85px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablets-width) {
+    flex-direction: row;
+    align-items: center;
+  }
 
   &:last-child {
     margin-bottom: 0;
   }
 }
-
 
 .form__legend {
   .text-settings();
@@ -227,6 +275,9 @@
   font-size: 14px;
   line-height: 16px;
   color: @grey;
+  display: block;
+
+  margin-bottom: 17px;
 
   @media (min-width: @tablets-width) {
 
