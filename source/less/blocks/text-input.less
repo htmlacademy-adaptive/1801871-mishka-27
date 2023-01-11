@@ -1,3 +1,6 @@
+.text-input {
+  position: relative;
+}
 
 .text-input__label {
   .text-settings();
@@ -64,3 +67,23 @@
   }
 }
 
+.text-input__input-icon {
+  position: absolute;
+  top: 40px;
+  right: 8px;
+  opacity: 0.2;
+
+  @media (min-width: @tablets-width) {
+    top: 20px;
+  }
+}
+
+.text-input__input:hover + .text-input__input-icon {
+  fill: @aqua-smoth;
+  opacity: 1;
+}
+
+.text-input__input:active + .text-input__input-icon {
+  fill: @aqua-smoth;
+  opacity: 1;
+}

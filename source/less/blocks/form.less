@@ -1,5 +1,7 @@
 .form {
   background-color: @white;
+
+  margin-bottom: 55px;
 }
 
 .form__title-text-wrapper {
@@ -136,6 +138,8 @@
 // сетки дял телефона и почты
 .form__tel-email-wrapper {
   .wrapper ();
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: @tablets-width) {
 
@@ -184,12 +188,16 @@
 }
 
 // Доп врапер
+
 .form__wish-wrapper {
   .wrapper ();
+
+  margin-bottom: 17px;
 
   @media (min-width: @tablets-width) {
     display: grid;
     grid-template-columns: 169px 1fr;
+    margin-bottom: 53px;
   }
 }
 
@@ -204,16 +212,30 @@
 .form__text-area {
   width: 100%;
   min-height: 100px;
-  margin-bottom: 17px;
 }
 // сетки кнопки и рекваерид
 
 .form__requered-button-wrapper {
   .wrapper ();
 
+
   @media (min-width: @tablets-width) {
 
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.form__button {
+  width: 100%;
+
+  @media (min-width: @tablets-width) {
+    width: 230px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 169px;
   }
 }
 
@@ -277,11 +299,11 @@
   color: @grey;
   display: block;
 
-  margin-bottom: 17px;
+  margin-bottom: 30px;
 
   @media (min-width: @tablets-width) {
 
-
+    margin-bottom: 0;
     order: 1;
   }
 }
