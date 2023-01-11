@@ -1,5 +1,7 @@
 .form {
   background-color: @white;
+
+  margin-bottom: 55px;
 }
 
 .form__title-text-wrapper {
@@ -14,14 +16,30 @@
     grid-template-columns: 169px 1fr;
   }
 }
+
+.form__type {
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 35px;
+
+  @media (min-width: @tablets-width) {
+    margin-bottom: 50px;
+  }
+}
 // сетки для типа
 .form__type-legend {
+  margin-bottom: 30px;
+
   @media (min-width: @tablets-width) {
     grid-column: 1/2;
   }
 }
 
 .form__type-radio-first {
+  margin-bottom: 11px;
+
   @media (min-width: @tablets-width) {
     grid-column: 2/3;
   }
@@ -35,17 +53,29 @@
 }
 // сетки для цвета
 .form__color {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  margin-bottom: 23px;
+
   @media (min-width: @tablets-width) {
     background-color: @light-white;
+    padding: 50px 0;
+
+    margin-bottom: 50px;
   }
 }
 
 .form__color-wrapper {
   .wrapper ();
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: @tablets-width) {
     display: grid;
     grid-template-columns: 169px 1fr 1fr;
+    row-gap: 23px;
   }
 
   @media (min-width: @desktop-width) {
@@ -54,12 +84,38 @@
 }
 
 .form__color-legend {
+  margin-bottom: 25px;
+
   @media (min-width: @tablets-width) {
     grid-column: 1/2;
     grid-row: 1/4;
   }
 }
+
+.form__color-checkbox {
+  @media (max-width: @mobile-only) {
+    margin-bottom: 23px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
 // сетки для блока с фио
+.form__id {
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+  margin-bottom: 34.5px;
+
+  @media (min-width: @tablets-width) {
+    margin-bottom: 50px;
+  }
+}
+
 .form__id-wrapper {
   .wrapper ();
 
@@ -70,14 +126,20 @@
 }
 
 .form__id-legend {
+  margin-bottom: 28.85px;
+
   @media (min-width: @tablets-width) {
     grid-column: 1/2;
     grid-row: 1/4;
+
+    margin-top: 17px;
   }
 }
 // сетки дял телефона и почты
 .form__tel-email-wrapper {
   .wrapper ();
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: @tablets-width) {
 
@@ -87,33 +149,93 @@
 }
 
 .form__tel-email-legend {
+  margin-bottom: 4.5px;
+
   @media (min-width: @tablets-width) {
     grid-column: 1/2;
+    margin-top: 17.5px;
   }
 }
 
-.form__tel-email {
+.form__email {
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 34.5px;
+
   @media (min-width: @tablets-width) {
     background-color: @light-white;
+    padding-bottom: 50px;
+
+    margin-bottom: 50px;
   }
 }
+
+.form__tel {
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 34.5px;
+
+  @media (min-width: @tablets-width) {
+    background-color: @light-white;
+    padding-top: 50px;
+    padding-bottom: 24px;
+    margin-bottom: 0;
+  }
+}
+
 // Доп врапер
+
 .form__wish-wrapper {
   .wrapper ();
+
+  margin-bottom: 17px;
 
   @media (min-width: @tablets-width) {
     display: grid;
     grid-template-columns: 169px 1fr;
+    margin-bottom: 53px;
   }
+}
+
+.form__wish-legend {
+  margin-bottom: 22.5px;
+
+  @media (min-width: @tablets-width) {
+    margin-top: 22px;
+  }
+}
+
+.form__text-area {
+  width: 100%;
+  min-height: 100px;
 }
 // сетки кнопки и рекваерид
 
 .form__requered-button-wrapper {
   .wrapper ();
 
+
   @media (min-width: @tablets-width) {
 
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.form__button {
+  width: 100%;
+
+  @media (min-width: @tablets-width) {
+    width: 230px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 169px;
   }
 }
 
@@ -123,6 +245,28 @@
   font-size: 13px;
   line-height: 24px;
   color: @grey;
+
+  margin: 0;
+
+  @media (min-width: @tablets-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.form__text-input {
+  margin-bottom: 21.85px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablets-width) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form__legend {
@@ -131,6 +275,20 @@
   font-size: 17px;
   line-height: 16px;
   color: @aqua;
+
+  position: relative;
+
+  @media (max-width: @mobile-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: calc(100% - 60px);
+      background-color: @aqua;
+      left: 60px;
+      top: 8px;
+    }
+  }
 }
 
 .form__requered {
@@ -139,10 +297,13 @@
   font-size: 14px;
   line-height: 16px;
   color: @grey;
+  display: block;
+
+  margin-bottom: 30px;
 
   @media (min-width: @tablets-width) {
 
-
+    margin-bottom: 0;
     order: 1;
   }
 }

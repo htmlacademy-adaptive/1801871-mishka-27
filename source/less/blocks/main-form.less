@@ -4,11 +4,39 @@
 
 .main-form__title-container {
   background-color: @light-white;
+  text-align: center;
+
+  overflow: hidden;
 }
 
 .main-form__title-wrapper {
   .wrapper ();
+  position: relative;
+  box-sizing: border-box;
+
+  padding: 73px 0;
+
+  @media (min-width: @tablets-width) {
+    padding: 101px 0 87px 0;
+
+    &::before {
+      content: "";
+      background-image: url("../img/sampels/wave.svg");
+      position: absolute;
+      height: 34px;
+      width: 3000px;
+      bottom: -10px;
+      left: -500px;
+      z-index: 10;
+      background-repeat: repeat-x;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 101px 0 113px 0;
+  }
 }
+
 
 .main-form__title {
   .text-settings();
@@ -16,4 +44,6 @@
   font-size: 27px;
   line-height: 30px;
   color: @dark;
+
+  margin: 0;
 }

@@ -1,3 +1,30 @@
 .slider__list {
   list-style: none;
+
+  padding: 0;
+}
+
+.slider__button {
+  display: block;
+  height: 52px;
+  width: 100%;
+
+  background-color: inherit;
+  border: 1px solid @grey-light;
+
+  @media (min-width: @tablets-width) {
+    border: 0;
+  }
+
+  &--left {
+    border-right: 0;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

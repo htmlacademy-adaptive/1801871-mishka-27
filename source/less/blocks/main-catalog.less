@@ -1,5 +1,8 @@
 .main-catalog__title-container {
-  background-color: #f1f1f1;
+  background-color: @light-white;
+  overflow: hidden;
+
+  margin-bottom: 30px;
 }
 
 .main-catalog__title {
@@ -8,12 +11,36 @@
   font-size: 27px;
   line-height: 30px;
   color: @dark;
+
+  margin: 0;
 }
 
 .main-catalog__title-container-wrapper {
   .wrapper ();
+  padding: 73px 0;
+  position: relative;
+
+  text-align: center;
 
   @media (min-width: @tablets-width) {
-    display: flex;
+    &::before {
+      content: "";
+      background-image: url("../img/sampels/wave.svg");
+      position: absolute;
+      height: 34px;
+      width: 3000px;
+      bottom: -10px;
+      left: -500px;
+      z-index: 10;
+      background-repeat: repeat-x;
+    }
   }
+}
+
+.main-catalog__production {
+  margin-bottom: 58px;
+}
+
+.main-catalog__catalog-items {
+  margin-bottom: 58px;
 }

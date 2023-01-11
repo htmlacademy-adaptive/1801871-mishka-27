@@ -4,10 +4,14 @@
 
 .main-footer__wrapper {
   .wrapper ();
+  padding-top: 30px;
+  padding-bottom: 22px;
 
   @media (min-width: @tablets-width) {
     display: flex;
     justify-content: space-between;
+    padding-top: 51px;
+    padding-bottom: 58px;
   }
 }
 
@@ -17,12 +21,29 @@
   font-size: 19px;
   line-height: 18px;
   color: @dark;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-footer__copyright-text {
+  margin-right: 27px;
+
+  @media (min-width: @tablets-width) {
+    margin-right: 25px;
+  }
 }
 
 .main-footer__logo {
   display: none;
+  height: 34px;
 
   @media (min-width: @tablets-width) {
     display: block;
   }
+}
+
+.main-footer__socials {
+  padding-bottom: 30px;
 }

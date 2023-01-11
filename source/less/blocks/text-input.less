@@ -1,9 +1,15 @@
+.text-input {
+  position: relative;
+}
+
 .text-input__label {
   .text-settings();
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   color: @dark;
+
+  margin-right: 25px;
 }
 
 .text-input__legend {
@@ -12,4 +18,72 @@
   font-size: 17px;
   line-height: 16px;
   color: @aqua;
+}
+
+.text-input__input {
+  .text-settings ();
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 18px;
+  border: 0;
+  border-bottom: 2px solid @grey;
+  padding: 17px 0;
+  flex-grow: 1;
+  color: @grey;
+  background-color: inherit;
+
+  @media (min-width: @tablets-width) {
+    padding: 17px;
+  }
+
+
+  &:hover {
+    border: 0;
+    border-bottom: 2px solid @aqua-smoth;
+  }
+
+  &:active {
+    border: 0;
+    border-bottom: 2px solid @aqua-smoth;
+  }
+
+  &::placeholder {
+    color: @dark;
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    border: 0;
+    border-bottom: 2px solid @aqua-smoth;
+    outline: 0;
+  }
+
+  &--telphone {
+    padding: 17px 40px 17px 0;
+  }
+
+  &--email {
+    padding: 17px 40px 17px 0;
+  }
+}
+
+.text-input__input-icon {
+  position: absolute;
+  top: 40px;
+  right: 8px;
+  opacity: 0.2;
+
+  @media (min-width: @tablets-width) {
+    top: 20px;
+  }
+}
+
+.text-input__input:hover + .text-input__input-icon {
+  fill: @aqua-smoth;
+  opacity: 1;
+}
+
+.text-input__input:active + .text-input__input-icon {
+  fill: @aqua-smoth;
+  opacity: 1;
 }

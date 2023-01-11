@@ -5,7 +5,22 @@
   line-height: 20px;
   color: @grey;
 
+  box-sizing: border-box;
+
+  display: block;
+  border: 2px solid @grey;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+  height: 52px;
+
   &:hover {
     color: @white;
+    background-color: @grey;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @grey;
   }
 }
