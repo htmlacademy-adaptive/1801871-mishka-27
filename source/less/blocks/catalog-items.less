@@ -7,7 +7,13 @@
 }
 
 .catalog-items__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
   @media (min-width: @desktop-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
   }
 }

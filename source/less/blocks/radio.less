@@ -1,7 +1,48 @@
+.radio {
+  display: flex;
+  align-items: center;
+}
+
+.radio:hover .radio__control-mark {
+  border: 2px solid @aqua-smoth;
+}
+
 .radio__description {
   .text-settings();
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   color: @dark;
+}
+
+.radio__control-mark {
+  position: relative;
+  box-sizing: border-box;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid @grey;
+  margin-right: 19px;
+
+  @media (min-width: @tablets-width) {
+    margin-right: 27px;
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.radio__input:checked + .radio__control-mark::before {
+  content: "";
+  position: absolute;
+  width: 43.57%;
+  height: 43.57%;
+  background-color: @aqua-smoth;
+  border-radius: 50%;
+
+  top: 29%;
+  left: 29%;
+}
+
+.radio__input:disabled + .radio__control-mark {
+  border: 2px solid @grey-super;
 }
