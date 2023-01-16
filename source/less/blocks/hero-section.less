@@ -4,6 +4,31 @@
   background-color: @grey-concrete;
   background-repeat: no-repeat;
   overflow: hidden;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backgrounds/hero-background2x.jpg");
+    background-size: 320px auto;
+  }
+
+  @media (min-width: @tablets-width) {
+    background-image: url("../img/backgrounds/hero-tablets.jpg");
+    background-position: 50% 3px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/hero-tablets2x.jpg");
+      background-size: 1150px auto;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/backgrounds/hero-desktop.jpg");
+    background-position: 50% 3px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/hero-desktop2x.jpg");
+      background-size: 1150px auto;
+    }
+  }
 }
 
 .hero-section__title {
@@ -15,6 +40,10 @@
 
   margin: 0;
   margin-bottom: 120px;
+
+  @media (min-width: @tablets-width) {
+    margin-bottom: 372px;
+  }
 }
 
 .hero-section__wrapper {
