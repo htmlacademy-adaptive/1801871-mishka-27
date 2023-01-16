@@ -196,6 +196,31 @@
   }
 }
 
+.header-navigation__logo-img {
+  @media (max-width: @mobile-only) {
+
+    width: 86px;
+    height: 35px;
+  }
+
+  @media (min-width: @tablets-width) {
+    width: 113.01px;
+    height: 45.96px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 149px;
+    height: 72px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
 
 .header-navigation__list-first {
   padding: 0;
