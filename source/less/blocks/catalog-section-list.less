@@ -34,18 +34,12 @@
 
 .catalog-section-list__item {
   background-color: @aqua-light;
-  padding-top: 22px;
-  padding-bottom: 18px;
+
   position: relative;
   box-sizing: border-box;
 
-  &:hover {
-    height: calc(50% + 5px);
-  }
-
   @media (min-width: @tablets-width) {
     flex-grow: 1;
-    padding: 25px 33px 27px 36px;
   }
 }
 
@@ -85,4 +79,21 @@
 
   display: flex;
   justify-content: space-between;
+
+  padding-top: 22px;
+  padding-bottom: 18px;
+
+  @media (max-width: @mobile-only) {
+    &:hover {
+      padding-bottom: 23px;
+    }
+  }
+
+  @media (min-width: @tablets-width) {
+    padding: 25px 33px 27px 36px;
+
+    &:hover {
+      padding-bottom: 32px;
+    }
+  }
 }
