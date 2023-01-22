@@ -72,9 +72,9 @@ const webpImages = () => {
 //svg
 
  const svgMin = () => {
-  return gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
+  return gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
   .pipe(svgmin())
-  .pipe(gulp.dest('build/img'));
+  .pipe(gulp.dest('build/img/svg'));
 }
 
  const sprite = () => {
@@ -134,6 +134,7 @@ const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
   gulp.watch('source/*.html').on('change', browser.reload);
 }
+
 
 // Build
 
