@@ -1,12 +1,13 @@
 
 .hero-section {
-  background-image: url("../img/backgrounds/hero-background.jpg");
+  background-image: url("../img/backgrounds/hero-mobile.jpg");
   background-color: @grey-concrete;
+  background-position: 50% 0;
   background-repeat: no-repeat;
   overflow: hidden;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/backgrounds/hero-background2x.jpg");
+    background-image: url("../img/backgrounds/hero-mobile2x.jpg");
     background-size: 320px auto;
   }
 
@@ -55,7 +56,21 @@
   @media (min-width: @tablets-width) {
     &::before {
       content: "";
-      background-image: url("../img/sampels/wave.svg");
+      background-image: url("../img/svg/tablets-wave.svg");
+      position: absolute;
+      height: 24px;
+      width: 3000px;
+      bottom: -10px;
+      left: -500px;
+      z-index: 10;
+      background-repeat: repeat-x;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      content: "";
+      background-image: url("../img/svg/desktop-wave.svg");
       position: absolute;
       height: 34px;
       width: 3000px;
