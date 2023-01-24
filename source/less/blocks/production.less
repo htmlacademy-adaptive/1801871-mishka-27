@@ -76,17 +76,9 @@
   min-height: 150px;
   background-color: @white;
   margin-bottom: 2px;
-  position: relative;
-
-  &::after {
-    content: "";
-    width: 100px;
-    height: 76px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-image: url("../img/svg/play.svg");
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background-image: url("../img/backgrounds/production-mobile.jpg");
   background-repeat: no-repeat;
@@ -123,5 +115,20 @@
     order: 0;
     grid-column: 1/2;
     grid-row: 1/4;
+  }
+}
+
+.production__video-button {
+  background-image: url("../img/svg/play.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 76px;
+  border: 0;
+  background-color: transparent;
+
+  &:hover {
+    width: 120px;
+    height: 91.2px;
   }
 }

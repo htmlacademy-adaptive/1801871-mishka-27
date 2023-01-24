@@ -6,34 +6,10 @@
   @media (min-width: @tablets-width) {
     display: flex;
   }
-
-  @media (max-width: @mobile-only) {
-    :nth-child(2) {
-      &::after {
-        content: "";
-        position: absolute;
-        background-color: @aqua-light;
-        width: 1000px;
-        left: -1000px;
-        top: 0;
-        height: 100%;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        background-color: @aqua-light;
-        width: 1000px;
-        right: -1000px;
-        top: 0;
-        height: 100%;
-      }
-    }
-  }
 }
 
 .catalog-section-list__item {
-  background-color: @aqua-light;
+
 
   position: relative;
   box-sizing: border-box;
@@ -43,7 +19,53 @@
   }
 }
 
-.catalog-section-list__item--left {
+.catalog-section-list__link {
+  .text-settings();
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: @white;
+  background-color: @aqua-light;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 22px;
+  padding-bottom: 18px;
+
+  @media (max-width: @mobile-only) {
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: @aqua-light;
+      width: 1000px;
+      left: -1000px;
+      top: 0;
+      height: 100%;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: @aqua-light;
+      width: 1000px;
+      right: -1000px;
+      top: 0;
+      height: 100%;
+    }
+  }
+
+  @media (min-width: @tablets-width) {
+    padding: 25px 33px 27px 36px;
+  }
+
+  &:hover {
+    top: -5px;
+  }
+}
+
+.catalog-section-list__link--left {
   background-color: @aqua;
   position: relative;
 
@@ -70,30 +92,11 @@
   }
 }
 
-.catalog-section-list__link {
-  .text-settings();
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 24px;
-  color: @white;
+.catalog-section-list__link-img--lamp {
+  margin-right: 5px;
+}
 
-  display: flex;
-  justify-content: space-between;
-
-  padding-top: 22px;
-  padding-bottom: 18px;
-
-  @media (max-width: @mobile-only) {
-    &:hover {
-      padding-bottom: 23px;
-    }
-  }
-
-  @media (min-width: @tablets-width) {
-    padding: 25px 33px 27px 36px;
-
-    &:hover {
-      padding-bottom: 32px;
-    }
-  }
+.catalog-section-list__link-img--toy {
+  margin-right: -5px;
+  margin-bottom: 2px;
 }

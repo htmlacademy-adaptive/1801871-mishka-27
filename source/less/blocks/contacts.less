@@ -8,6 +8,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 54px;
     column-gap: 80px;
+    max-width: 1050px;
   }
 }
 
@@ -85,6 +86,10 @@
   color: @grey;
 
   margin: 0;
+
+  @media (max-width: @mobile-only) {
+    margin-left: 3px;
+  }
 }
 
 .contacts__item {

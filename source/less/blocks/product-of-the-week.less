@@ -37,7 +37,7 @@
     height: 6px;
     background-position: 0 6px;
     background-image: url("../img/svg/mobile-wave-second.svg");
-    bottom: -36px;
+    bottom: -47px;
 
     @media (min-width: @tablets-width) {
       background-image: url("../img/svg/tablets-wave-second.svg");
@@ -64,6 +64,7 @@
   z-index: 10;
 
   margin: 0;
+  margin-bottom: 5px;
 
   @media (min-width: @tablets-width) {
     font-size: 43px;
@@ -150,6 +151,8 @@
   font-size: 15px;
   line-height: 20px;
   color: @grey;
+
+  margin: 0;
 }
 
 .product-of-the-week__price {
@@ -160,7 +163,7 @@
   color: @grey;
 
   margin: 0;
-  margin-bottom: 24.5px;
+  margin-bottom: 18.5px;
 
   text-align: center;
 
@@ -171,9 +174,13 @@
 }
 
 .product-of-the-week__item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  column-gap: 28px;
   padding-bottom: 13px;
   border-bottom: 1px solid @grey-light;
+
+  margin-bottom: 5px;
 
   @media (min-width: @desktop-width) {
     padding-bottom: 15px;
@@ -229,6 +236,9 @@
 
 .product-of-the-week__br {
   display: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
 
   @media (min-width: @tablets-width) {
     display: block;
