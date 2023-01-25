@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 54px;
-    column-gap: 80px;
+    max-width: 1050px;
   }
 }
 
@@ -18,7 +18,7 @@
   box-sizing: border-box;
 
   @media (min-width: @tablets-width) {
-    padding-top: 22px;
+    padding-top: 26px;
     margin-bottom: 49px;
 
     &::before {
@@ -27,8 +27,8 @@
       width: 47px;
       height: 81px;
       background-image: url("../img/svg/flag.svg");
-      right: 0;
-      top: 0;
+      right: 2px;
+      top: 3px;
 
       @media (min-width: @desktop-width) {
         left: 62px;
@@ -58,11 +58,15 @@
 
   @media (min-width: @tablets-width) {
     margin-bottom: 49px;
+    font-size: 43px;
+    line-height: 50px;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 17px;
     margin-bottom: 35px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -75,6 +79,11 @@
   color: @grey;
 
   margin-right: 30px;
+
+  @media (min-width: @tablets-width) {
+    font-size: 17px;
+    margin-right: 25px;
+  }
 }
 
 .contacts__value {
@@ -85,6 +94,14 @@
   color: @grey;
 
   margin: 0;
+
+  @media (max-width: @mobile-only) {
+    margin-left: 3px;
+  }
+
+  @media (min-width: @tablets-width) {
+    font-size: 17px;
+  }
 }
 
 .contacts__item {
@@ -102,7 +119,6 @@
   @media (min-width: @tablets-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 25px;
   }
 
   @media (min-width: @desktop-width) {
@@ -115,9 +131,23 @@
   .wrapper();
   box-sizing: border-box;
 
+  @media (min-width: @tablets-width) {
+    width: 230px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 100%;
     padding-left: 175px;
+  }
+}
+
+.contacts__write-us {
+  @media (min-width: @tablets-width) {
+    font-size: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 230px;
   }
 }
 
@@ -126,10 +156,10 @@
   height: 454px;
   background-color: @white;
 
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 
   @media (min-width: @tablets-width) {
-    margin-bottom: 55px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: @desktop-width) {

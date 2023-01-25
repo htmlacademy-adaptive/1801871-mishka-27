@@ -26,6 +26,10 @@
   align-items: center;
   justify-content: center;
 
+  @media (min-width: @tablets-width) {
+    align-items: flex-start;
+  }
+
   &:hover .main-footer__copyright-img {
     fill: @aqua-dark;
   }
@@ -41,6 +45,7 @@
 
   @media (min-width: @tablets-width) {
     margin-right: 25px;
+    margin-top: 8px;
   }
 }
 
@@ -60,8 +65,4 @@
     fill: @aqua-dark;
     opacity: 0.3;
   }
-}
-
-.main-footer__socials {
-  padding-bottom: 30px;
 }

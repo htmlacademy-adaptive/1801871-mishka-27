@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/svg/fav.svg" type="image/svg+xml">
   </head>
   <body class="body">
     <header class="main-header">
@@ -63,26 +65,24 @@
           </div>
         </div>
         </nav>
-      </div>
     </header>
-<!-- sdsdsd -->
 
     <main class="main-container">
       <h1 class="visually-hidden"> Магазин изделий ручной работы Мишка</h1>
       <section class="hero-section main-container__hero-section">
         <div class="hero-section__wrapper">
-          <h2 class="hero-section__title">Милые штуки<br class="hero-section__br-in-title"> ручной<br> работы для дома</h2>
+          <h2 class="hero-section__title">Милые штуки<br class="hero-section__br-in-title">&nbsp;ручной<br> работы для дома</h2>
           <ul class="catalog-section-list hero-section__catalog-section-list">
             <li class="catalog-section-list__item catalog-section-list__item--left">
-              <a class="catalog-section-list__link">
-                Предметы<br>интерьера
-                <img class="catalog-section-list__link-img" width="40" height="62" src="img/svg/lamp.svg">
+              <a class="catalog-section-list__link catalog-section-list__link--left">
+                <span class="catalog-section-list__link-text">Предметы<br>интерьера</span>
+                <img class="catalog-section-list__link-img catalog-section-list__link-img--lamp" width="40" height="62" src="img/svg/lamp.svg" alt="Картинка лампы">
               </a>
             </li>
             <li class="catalog-section-list__item">
               <a class="catalog-section-list__link">
-                Детские<br> игрушки
-                <img class="catalog-section-list__link-img" width="60" height="60" src="img/svg/toy.svg">
+                <span class="catalog-section-list__link-text">Детские<br> игрушки</span>
+                <img class="catalog-section-list__link-img catalog-section-list__link-img--toy" width="60" height="60" src="img/svg/toy.svg" alt="Картинка игрушки">
               </a>
             </li>
           </ul>
@@ -92,7 +92,7 @@
       <section class="product-of-the-week main-container__product-of-the-week">
         <div class="product-of-the-week__wrapper">
           <h3 class="product-of-the-week__product-title">Вязаные корзинки</h3>
-          <h2 class="product-of-the-week__title">ТОВАР <br class="product-of-the-week__br">НЕДЕЛИ</h2>
+          <h2 class="product-of-the-week__title">ТОВАР&nbsp;<br class="product-of-the-week__br">НЕДЕЛИ</h2>
           <div class="product-of-the-week__text-container">
             <p class="product-of-the-week__description">Экологически чистая пряжа,<br>
               ручная работа. Доступны в шести<br> расцветках и трёх размерах.</p>
@@ -130,8 +130,7 @@
 
             <source media="(min-width: 1150px)" srcset="img/products-of-the-week/product-of-the-week-desktop.jpg 1x, img/products-of-the-week/product-of-the-week-desktop2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/products-of-the-week/product-of-the-week-tablet.jpg 1x, img/products-of-the-week/product-of-the-week-tablet2x.jpg 2x">
-            <img class="product-of-the-week__img" src="img/products-of-the-week/product-of-the-week-mobile.jpg" srcset="img/products-of-the-week/product-of-the-week-mobile2x.jpg 2x"
-                 alt="Вязанная корзинка для игрушек">
+            <img class="product-of-the-week__img" src="img/products-of-the-week/product-of-the-week-mobile.jpg" srcset="img/products-of-the-week/product-of-the-week-mobile2x.jpg 2x" alt="Вязанная корзинка для игрушек">
           </picture>
           <div class="product-of-the-week__price-button-container">
             <p class="product-of-the-week__price">Цена: 990 руб.</p>
@@ -163,9 +162,9 @@
           <h2 class="reviews__title">Отзывы</h2>
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
-                у популярных инстамамочек.
-                В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как &nbsp;<br class="rewiews__br rewiews__br--tablets">
+                у популярных инстамамочек.&nbsp;<br class="rewiews__br">
+                В отчаянии, я накупила аксессуаров и игрушек в Мишке,&nbsp;<br class="rewiews__br">
                 и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
             </li>
           </ul>
@@ -182,7 +181,7 @@
                 </svg>
             </button>
           </div>
-          <a class="reviews__write-review main-button">Написать</a>
+          <a class="reviews__write-review main-button">НАПИСАТЬ</a>
         </div>
 
       </section>
@@ -199,17 +198,17 @@
             </div>
             <div class="contacts__item">
               <dt class="contacts__characteristic">адрес:</dt>
-              <dd class="contacts__value">г. Санкт-Петербургул.<br> Большая Конюшенная<br>д.
+              <dd class="contacts__value">г. Санкт-Петербург<br> ул.&nbsp;Большая Конюшенная<br>д.
                 19/8, офис 101</dd>
             </div>
           </dl>
         </div>
         <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.2230761900666!2d30.322481907621956!3d59.93879191467767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1674359675435!5m2!1sru!2sru" width="320" height="454" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  title="г. Санкт-Петербург ул Большая Конюшенная д.
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.2230761900666!2d30.322481907621956!3d59.93879191467767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1674359675435!5m2!1sru!2sru" width="320" height="454" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  title="г. Санкт-Петербург ул Большая Конюшенная д.
             19/8, офис 101"></iframe>
         </div>
         <div class="contacts__write-us-wrapper">
-          <a class="contacts__write-us main-button">НАпишите нам</a>
+          <a class="contacts__write-us main-button">НАПИШИТЕ НАМ</a>
         </div>
       </section>
     </main>
@@ -254,6 +253,20 @@
 
       </div>
     </footer>
+    <section class="modal modal--closed">
+      <div class="modal-container">
+        <div class="modal__wrapper">
+          <h2 class="modal__title">ДОБАВИТЬ В КОРЗИНУ</h2>
+          <span class="modal__text">Выберите размер:</span>
+            <ul class="modal__button-list">
+              <li class="modal__button">S</li>
+              <li class="modal__button">M</li>
+              <li class="modal__button">L</li>
+            </ul>
+            <div class="modal__button-add">ДОБАВИТЬ</div>
+        </div>
+      </div>
+    </section>
     <script src="js/script.js"></script>
   </body>
 </html>

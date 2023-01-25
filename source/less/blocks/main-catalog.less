@@ -3,6 +3,14 @@
   overflow: hidden;
 
   margin-bottom: 30px;
+
+  @media (min-width: @tablets-width) {
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 120px;
+  }
 }
 
 .main-catalog__title {
@@ -13,6 +21,16 @@
   color: @dark;
 
   margin: 0;
+
+  @media (min-width: @tablets-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .main-catalog__title-container-wrapper {
@@ -23,9 +41,28 @@
   text-align: center;
 
   @media (min-width: @tablets-width) {
+    padding-top: 56px;
+    padding-bottom: 85px;
+
     &::before {
       content: "";
-      background-image: url("../img/sampels/wave.svg");
+      background-image: url("../img/svg/tablets-wave.svg");
+      position: absolute;
+      height: 34px;
+      width: 3000px;
+      bottom: -10px;
+      left: -495px;
+      z-index: 10;
+      background-repeat: repeat-x;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 105px;
+
+    &::before {
+      content: "";
+      background-image: url("../img/svg/desktop-wave.svg");
       position: absolute;
       height: 34px;
       width: 3000px;
@@ -39,8 +76,24 @@
 
 .main-catalog__production {
   margin-bottom: 58px;
+
+  @media (min-width: @tablets-width) {
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 107px;
+  }
 }
 
 .main-catalog__catalog-items {
-  margin-bottom: 58px;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablets-width) {
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 55px;
+  }
 }

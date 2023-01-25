@@ -2,7 +2,7 @@
 .hero-section {
   background-image: url("../img/backgrounds/hero-mobile.jpg");
   background-color: @grey-concrete;
-  background-position: 50% 0;
+  background-position: 50% -16px;
   background-repeat: no-repeat;
   overflow: hidden;
 
@@ -13,7 +13,7 @@
 
   @media (min-width: @tablets-width) {
     background-image: url("../img/backgrounds/hero-tablets.jpg");
-    background-position: 50% 3px;
+    background-position: 50% 35px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/backgrounds/hero-tablets2x.jpg");
@@ -23,7 +23,7 @@
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/backgrounds/hero-desktop.jpg");
-    background-position: 50% 3px;
+    background-position: 50% 38px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/backgrounds/hero-desktop2x.jpg");
@@ -44,6 +44,14 @@
 
   @media (min-width: @tablets-width) {
     margin-bottom: 372px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 360px;
   }
 }
 
@@ -54,14 +62,16 @@
   position: relative;
 
   @media (min-width: @tablets-width) {
+    padding-top: 110px;
+
     &::before {
       content: "";
       background-image: url("../img/svg/tablets-wave.svg");
       position: absolute;
       height: 24px;
       width: 3000px;
-      bottom: -10px;
-      left: -500px;
+      bottom: -12px;
+      left: -482px;
       z-index: 10;
       background-repeat: repeat-x;
     }
@@ -74,8 +84,8 @@
       position: absolute;
       height: 34px;
       width: 3000px;
-      bottom: -10px;
-      left: -500px;
+      bottom: -20px;
+      left: -488px;
       z-index: 10;
       background-repeat: repeat-x;
     }

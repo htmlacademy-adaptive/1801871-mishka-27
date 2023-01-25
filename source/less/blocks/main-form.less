@@ -6,7 +6,17 @@
   background-color: @light-white;
   text-align: center;
 
+  margin-bottom: 18px;
+
   overflow: hidden;
+
+  @media (min-width: @tablets-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 95px;
+  }
 }
 
 .main-form__title-wrapper {
@@ -17,11 +27,11 @@
   padding: 73px 0;
 
   @media (min-width: @tablets-width) {
-    padding: 101px 0 87px 0;
+    padding: 55px 0 87px 0;
 
     &::before {
       content: "";
-      background-image: url("../img/sampels/wave.svg");
+      background-image: url("../img/svg/tablets-wave.svg");
       position: absolute;
       height: 34px;
       width: 3000px;
@@ -33,7 +43,19 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 101px 0 113px 0;
+    padding: 60px 0 113px 0;
+
+    &::before {
+      content: "";
+      background-image: url("../img/svg/desktop-wave.svg");
+      position: absolute;
+      height: 34px;
+      width: 3000px;
+      bottom: 0;
+      left: -500px;
+      z-index: 10;
+      background-repeat: repeat-x;
+    }
   }
 }
 
@@ -46,4 +68,14 @@
   color: @dark;
 
   margin: 0;
+
+  @media (min-width: @tablets-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

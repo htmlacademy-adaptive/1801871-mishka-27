@@ -12,7 +12,6 @@ import terser from 'gulp-terser';
 import svgmin from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import {deleteAsync} from 'del';
-// fedfdf
 // Styles
 
 export const styles = () => {
@@ -62,7 +61,7 @@ const copyImages = () => {
 //webp
 
 const webpImages = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/backgrounds/*.{png,jpg}'])
   .pipe(squoosh({
     webp: {}
     }))
@@ -132,7 +131,8 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html, reload));
+  gulp.watch('source/img/icons/*.svg', gulp.series(sprite, reload));
 }
 
 

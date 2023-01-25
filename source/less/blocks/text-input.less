@@ -10,6 +10,11 @@
   color: @dark;
 
   margin-right: 25px;
+
+  @media (min-width: @tablets-width) {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
 .text-input__legend {
@@ -23,11 +28,11 @@
 .text-input__input {
   .text-settings ();
   font-weight: 400;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 18px;
   border: 0;
   border-bottom: 2px solid @grey;
-  padding: 17px 0;
+  padding: 15px;
   flex-grow: 1;
   color: @grey;
   background-color: inherit;
@@ -35,7 +40,6 @@
   @media (min-width: @tablets-width) {
     padding: 17px;
   }
-
 
   &:hover {
     border: 0;
@@ -59,11 +63,20 @@
   }
 
   &--telphone {
-    padding: 17px 40px 17px 0;
+    padding: 17px 40px 17px 17px;
+
+    @media (min-width: @desktop-width) {
+      max-width: 644px;
+    }
   }
 
   &--email {
-    padding: 17px 40px 17px 0;
+    padding: 17px 40px 17px 17px;
+
+
+    @media (min-width: @desktop-width) {
+      max-width: 644px;
+    }
   }
 }
 
@@ -75,6 +88,11 @@
 
   @media (min-width: @tablets-width) {
     top: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 15px;
+    right: 183px;
   }
 }
 
