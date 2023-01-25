@@ -58,6 +58,8 @@
 
   @media (min-width: @tablets-width) {
     padding: 25px 33px 27px 36px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   &:hover {
@@ -94,9 +96,18 @@
 
 .catalog-section-list__link-img--lamp {
   margin-right: 5px;
+
+  @media (min-width: @tablets-width) and (max-width: @desktop-width) {
+    margin-top: 5px;
+  }
 }
 
 .catalog-section-list__link-img--toy {
   margin-right: -5px;
   margin-bottom: 2px;
+
+  @media (min-width: @tablets-width) and (max-width: @desktop-width) {
+    margin-top: 5px;
+    margin-right: 2px;
+  }
 }

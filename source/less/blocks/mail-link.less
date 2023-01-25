@@ -7,7 +7,11 @@
     height: 1px;
     width: 100%;
     background-color: @aqua-dark;
-    bottom: -3px;
+    bottom: -8px;
+
+    @media (max-width: @mobile-only) {
+      bottom: -2px;
+    }
   }
 
   &:active::before {
@@ -16,9 +20,13 @@
     height: 1px;
     width: 100%;
     background-color: @aqua-dark;
-    bottom: -3px;
+    bottom: -8px;
 
     opacity: 0.1;
+
+    @media (max-width: @mobile-only) {
+      bottom: -2px;
+    }
   }
 
   &:hover {
