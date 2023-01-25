@@ -13,6 +13,11 @@
   font-size: 17px;
   line-height: 18px;
   color: @dark;
+
+  @media (min-width: @tablets-width) {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
 .radio__control-mark {
@@ -45,4 +50,10 @@
 
 .radio__input:disabled + .radio__control-mark {
   border: 2px solid @grey-super;
+}
+
+.radio__br {
+  @media (min-width: @tablets-width) {
+    display: none;
+  }
 }
