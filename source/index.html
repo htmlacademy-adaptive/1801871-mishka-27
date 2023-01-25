@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/svg/fav.svg" type="image/svg+xml">
   </head>
   <body class="body">
     <header class="main-header">
@@ -63,7 +65,6 @@
           </div>
         </div>
         </nav>
-      </div>
     </header>
 
     <main class="main-container">
@@ -75,13 +76,13 @@
             <li class="catalog-section-list__item catalog-section-list__item--left">
               <a class="catalog-section-list__link catalog-section-list__link--left">
                 <span class="catalog-section-list__link-text">Предметы<br>интерьера</span>
-                <img class="catalog-section-list__link-img catalog-section-list__link-img--lamp" width="40" height="62" src="img/svg/lamp.svg">
+                <img class="catalog-section-list__link-img catalog-section-list__link-img--lamp" width="40" height="62" src="img/svg/lamp.svg" alt="Картинка лампы">
               </a>
             </li>
             <li class="catalog-section-list__item">
               <a class="catalog-section-list__link">
                 <span class="catalog-section-list__link-text">Детские<br> игрушки</span>
-                <img class="catalog-section-list__link-img catalog-section-list__link-img--toy" width="60" height="60" src="img/svg/toy.svg">
+                <img class="catalog-section-list__link-img catalog-section-list__link-img--toy" width="60" height="60" src="img/svg/toy.svg" alt="Картинка игрушки">
               </a>
             </li>
           </ul>
@@ -253,6 +254,20 @@
 
       </div>
     </footer>
+    <section class="modal modal--closed">
+      <div class="modal-container">
+        <div class="modal__wrapper">
+          <h2 class="modal__title">ДОБАВИТЬ В КОРЗИНУ</h2>
+          <span class="modal__text">Выберите размер:</span>
+            <ul class="modal__button-list">
+              <li class="modal__button">S</li>
+              <li class="modal__button">M</li>
+              <li class="modal__button">L</li>
+            </ul>
+            <div class="modal__button-add">ДОБАВИТЬ</div>
+        </div>
+      </div>
+    </section>
     <script src="js/script.js"></script>
   </body>
 </html>
