@@ -18,12 +18,6 @@
   @media (min-width: @tablets-width) {
     flex-grow: 1;
   }
-
-  // &:hover > .catalog-section-list__link {
-  //   padding-bottom: 32px;
-  // }
-  // Решение дергает соседние блоки, что делать?
-  // Сделал решение с box-shadow чтобы закрыть дырку, но теперь два свойства, для левого и для правого блока, а что если цвета будет 3? Можно ли как то связать переменной это дело? inherit в boxshadow не сработал
 }
 
 .catalog-section-list__link {
@@ -34,6 +28,7 @@
   color: @white;
   background-color: @aqua-light;
   position: relative;
+  text-decoration: none;
 
   display: flex;
   justify-content: space-between;
