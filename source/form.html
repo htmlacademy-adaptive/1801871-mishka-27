@@ -78,7 +78,7 @@
           <h2 class="visually-hidden">Форма записи</h2>
           <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму&nbsp;<br class="form__text-br"> заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         </div>
-        <form>
+        <form  action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="form__type">
             <div class="form__type-wrapper">
               <legend class="form__legend form__type-legend">ТИП</legend>
@@ -99,32 +99,32 @@
               <div class="form__color-wrapper">
                 <legend class="form__legend form__color-legend">ЦВЕТ</legend>
                 <label class="checkbox form__color-checkbox">
-                  <input class="checkbox__input visually-hidden" type="checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="white" value="1">
                   <span class="checkbox__control-mark"></span>
                   <span class="checkbox__description">Белый</span>
                 </label>
                 <label class="checkbox form__color-checkbox">
-                  <input class="checkbox__input visually-hidden" type="checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="grey" value="2">
                   <span class="checkbox__control-mark"></span>
                   <span class="checkbox__description">Серый</span>
                 </label>
                 <label class="checkbox form__color-checkbox">
-                  <input class="checkbox__input visually-hidden" type="checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="tiffany" value="3">
                   <span class="checkbox__control-mark"></span>
                   <span class="checkbox__description">Тиффани</span>
                 </label>
                 <label class="checkbox form__color-checkbox">
-                  <input class="checkbox__input visually-hidden" type="checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="black" value="4">
                   <span class="checkbox__control-mark"></span>
                   <span class="checkbox__description">Черный</span>
                 </label>
                 <label class="checkbox form__color-checkbox">
-                  <input class="checkbox__input visually-hidden" type="checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="pink" value="5">
                   <span class="checkbox__control-mark"></span>
                   <span class="checkbox__description">Розовый</span>
                 </label>
                 <label class="checkbox form__color-checkbox">
-                  <input class="checkbox__input visually-hidden" type="checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="orange" value="6">
                   <span class="checkbox__control-mark"></span>
                   <span class="checkbox__description">Оранжевый</span>
                 </label>
@@ -135,22 +135,22 @@
                 <legend class="form__legend form__id-legend">ФИО</legend>
                 <div class="text-input form__text-input">
                   <label class="text-input__label" for="name">Имя:</label>
-                  <input class="text-input__input" type="text" id="name" placeholder="Введите ваше имя*">
+                  <input class="text-input__input" type="text" id="name" placeholder="Введите ваше имя*" name="name">
                 </div>
                 <div class="text-input form__text-input">
                   <label class="text-input__label" for="surname">Фамилия:</label>
-                  <input class="text-input__input" type="text" id="surname" placeholder="Укажите фамилию*">
+                  <input class="text-input__input" type="text" id="surname" placeholder="Укажите фамилию*" name="surname">
                 </div>
                 <div class="text-input form__text-input">
                   <label class="text-input__label" for="patronymic">Отчество:</label>
-                  <input class="text-input__input" type="text" id="patronymic" placeholder="Отчество, если желаете">
+                  <input class="text-input__input" type="text" id="patronymic" placeholder="Отчество, если желаете" name="father-name">
                 </div>
               </div>
             </fieldset>
             <fieldset class="form__tel">
               <div class="text-input form__tel-email-wrapper">
                   <legend class="form__legend text-input__legend form__tel-email-legend">ТЕЛ</legend>
-                  <input class="text-input__input text-input__input--telphone" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                  <input class="text-input__input text-input__input--telphone" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="tel">
                     <svg class="text-input__input-icon" width="25" height="24">
                       <use xlink:href="img/sprite.svg#phone"></use>
                     </svg>
@@ -159,7 +159,7 @@
             <fieldset class="form__email">
               <div class="text-input form__tel-email-wrapper">
                 <legend class="form__legend text-input__legend form__tel-email-legend">E-mail</legend>
-                <input class="text-input__input text-input__input--email" type="text" placeholder="Ваш Email*">
+                <input class="text-input__input text-input__input--email" type="text" placeholder="Ваш Email*" nmae="email">
                   <svg class="text-input__input-icon" width="32" height="21">
                     <use xlink:href="img/sprite.svg#mail"></use>
                   </svg>
@@ -168,7 +168,7 @@
             <div class="form__wish">
               <div class="form__wish-wrapper">
                 <legend class="form__legend form__wish-legend">ДОП</legend>
-                <textarea class="form__text-area">
+                <textarea class="form__text-area" name="text-area">
                 </textarea>
               </div>
             </fieldset>
