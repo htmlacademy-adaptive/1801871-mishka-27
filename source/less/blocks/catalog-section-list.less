@@ -13,10 +13,17 @@
 
   position: relative;
   box-sizing: border-box;
+  align-self: flex-end;
 
   @media (min-width: @tablets-width) {
     flex-grow: 1;
   }
+
+  // &:hover > .catalog-section-list__link {
+  //   padding-bottom: 32px;
+  // }
+  // Решение дергает соседние блоки, что делать?
+  // Сделал решение с box-shadow чтобы закрыть дырку, но теперь два свойства, для левого и для правого блока, а что если цвета будет 3? Можно ли как то связать переменной это дело? inherit в boxshadow не сработал
 }
 
 .catalog-section-list__link {
@@ -33,6 +40,15 @@
 
   padding-top: 22px;
   padding-bottom: 18px;
+
+  &:hover {
+    top: -5px;
+    box-shadow: 0 5px @aqua-light;
+  }
+
+  &:active .catalog-section-list__link-img {
+    opacity: 0.3;
+  }
 
   @media (max-width: @mobile-only) {
     &::after {
@@ -61,10 +77,6 @@
     font-size: 20px;
     line-height: 30px;
   }
-
-  &:hover {
-    top: -5px;
-  }
 }
 
 .catalog-section-list__link--left {
@@ -91,6 +103,11 @@
       top: 0;
       height: 100%;
     }
+  }
+
+  &:hover {
+    top: -5px;
+    box-shadow: 0 5px @aqua;
   }
 }
 

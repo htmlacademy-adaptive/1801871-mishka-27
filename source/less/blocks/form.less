@@ -285,9 +285,24 @@
   width: 100%;
   min-height: 135px;
   border: 2px solid @grey;
+  padding: 17px;
+  box-sizing: border-box;
+
+  .text-settings ();
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 18px;
 
   @media (min-width: @desktop-width) {
     width: 694px;
+  }
+
+  &:hover {
+    border: 2px solid @aqua-smoth;
+  }
+
+  &:active {
+    border: 2px solid @aqua-smoth;
   }
 }
 // сетки кнопки и рекваерид

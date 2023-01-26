@@ -53,6 +53,10 @@
   left: 20%;
 }
 
-.checkbox__input:disabled + .checkbox__control-mark {
+.checkbox__input:active + .checkbox__control-mark {
   border: 2px solid @grey-super;
+}
+
+.checkbox__input:disabled + .checkbox__control-mark {
+  border: 2px solid @black;
 }
