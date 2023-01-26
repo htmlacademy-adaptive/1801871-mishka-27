@@ -50,6 +50,7 @@
 }
 // сетки для типа
 .form__type-legend {
+  margin: 0;
   margin-bottom: 30px;
 
   @media (min-width: @tablets-width) {
@@ -115,6 +116,7 @@
 }
 
 .form__color-legend {
+  margin: 0;
   margin-bottom: 25px;
 
   @media (min-width: @tablets-width) {
@@ -172,6 +174,7 @@
 }
 
 .form__id-legend {
+  margin: 0;
   margin-bottom: 28.85px;
 
   @media (min-width: @tablets-width) {
@@ -203,6 +206,7 @@
 }
 
 .form__tel-email-legend {
+  margin: 0;
   margin-bottom: 4.5px;
 
   @media (min-width: @tablets-width) {
@@ -270,6 +274,7 @@
 }
 
 .form__wish-legend {
+  margin: 0;
   margin-bottom: 22.5px;
 
   @media (min-width: @tablets-width) {
@@ -285,9 +290,24 @@
   width: 100%;
   min-height: 135px;
   border: 2px solid @grey;
+  padding: 17px;
+  box-sizing: border-box;
+
+  .text-settings ();
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 18px;
 
   @media (min-width: @desktop-width) {
     width: 694px;
+  }
+
+  &:hover {
+    border: 2px solid @aqua-smoth;
+  }
+
+  &:active {
+    border: 2px solid @aqua-smoth;
   }
 }
 // сетки кнопки и рекваерид
@@ -370,6 +390,7 @@
   font-size: 17px;
   line-height: 16px;
   color: @aqua;
+
 
   position: relative;
 

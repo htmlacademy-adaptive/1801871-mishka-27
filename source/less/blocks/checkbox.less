@@ -1,6 +1,8 @@
 .checkbox {
   display: flex;
   align-items: center;
+
+  flex-wrap: wrap;
 }
 
 
@@ -14,6 +16,8 @@
   font-size: 17px;
   line-height: 18px;
   color: @dark;
+
+  max-width: 150px;
 
   @media (min-width: @tablets-width) {
     font-size: 19px;
@@ -44,7 +48,7 @@
   position: absolute;
   width: 62.5%;
   height: 45.1%;
-  background-image: url("../img/icons/tick.svg");
+  background-image: url("../img/svg/tick.svg");
   background-repeat: no-repeat;
   background-position: bottom;
 
@@ -53,6 +57,14 @@
   left: 20%;
 }
 
-.checkbox__input:disabled + .checkbox__control-mark {
+.checkbox__input:active + .checkbox__control-mark {
   border: 2px solid @grey-super;
+}
+
+.checkbox__input:disabled + .checkbox__control-mark {
+  border: 2px solid @black;
+}
+
+.checkbox__input:focus + .checkbox__control-mark {
+  outline: 2px solid @black;
 }

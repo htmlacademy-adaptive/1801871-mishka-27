@@ -5,8 +5,8 @@
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: @white;
-  opacity: 0.9;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 11;
 }
 
 .modal--closed {
@@ -18,8 +18,9 @@
   height: 336px;
   width: 100%;
   max-width: 566px;
-  opacity: 1;
-  margin: 0 auto;
+  margin: auto;
+  background-color: @white;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
 
 
   box-sizing: border-box;
@@ -31,6 +32,10 @@
 
   opacity: 1;
   padding-top: 28.5px;
+
+  @media (min-width: @tablets-width) {
+    width: 62.94%;
+  }
 }
 
 .modal__title {
@@ -69,21 +74,51 @@
   margin-bottom: 31px;
 }
 
+.modal__button-item {
+  flex-grow: 1;
+  margin-right: 7px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
 .modal__button {
   padding: 18px 22px;
   border: 2px solid @grey-border;
+
+  text-align: center;
+
+  width: 100%;
 
   .text-settings ();
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
+
+
+  &:hover {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
+
+  &:active {
+    border: 2px solid @aqua-smoth;
+  }
+
+  &--active {
+    border: 2px solid @aqua-smoth;
+  }
 }
+
 
 .modal__button-add {
   .text-settings ();
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
+  text-align: center;
+
+  width: 100%;
 
   background-color: @aqua;
   color: @white;
@@ -91,4 +126,13 @@
   padding: 18px 67px;
 
   margin-bottom: 46px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    background-color: @aqua-dark;
+    color: @dark;
+  }
 }
