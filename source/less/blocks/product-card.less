@@ -118,14 +118,16 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 27px 26px 25.5px 28px;
+    padding: 27px 30px 25.5px 26px;
     flex-grow: 1;
+
+    min-height: 197px;
   }
 }
 
 .product-card__hr {
   margin: 0;
-  margin-bottom: 22.5px;
+  margin-bottom: 23px;
   width: 100%;
   height: 1px;
   background-color: @grey-light;
@@ -153,9 +155,5 @@
 }
 
 .product-card__br {
-  display: none;
-
-  @media (min-width: @tablets-width) {
-    display: block;
-  }
+  display: block;
 }

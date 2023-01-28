@@ -21,7 +21,7 @@
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 169px 1fr;
+    grid-template-columns: 174px 1fr;
   }
 }
 
@@ -35,6 +35,11 @@
     display: grid;
     grid-template-columns: 169px 1fr;
   }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 175px 1fr;
+  }
 }
 
 .form__type {
@@ -46,6 +51,10 @@
 
   @media (min-width: @tablets-width) {
     margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 48px;
   }
 }
 // сетки для типа
@@ -59,7 +68,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    text-align: center;
+    margin-left: 60px;
   }
 }
 
@@ -95,7 +104,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 50px 0 30px 0;
+    padding: 50px 0 27px 0;
+    margin-bottom: 40px;
   }
 }
 
@@ -127,8 +137,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    text-align: center;
-    margin-top: 20px;
+    margin-top: 18px;
+    margin-left: 60px;
   }
 }
 
@@ -156,7 +166,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 45px;
+    margin-bottom: 49px;
   }
 }
 
@@ -185,7 +195,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    text-align: center;
+    margin-top: 30px;
+    margin-left: 60px;
   }
 }
 // сетки дял телефона и почты
@@ -215,7 +226,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    text-align: center;
+    margin-left: 60px;
+    margin-top: 27px;
   }
 }
 
@@ -234,7 +246,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 47px;
+    margin-bottom: 51px;
   }
 }
 
@@ -250,6 +262,11 @@
     padding-top: 50px;
     padding-bottom: 24px;
     margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 40px;
+    padding-bottom: 14px;
   }
 }
 
@@ -282,7 +299,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    text-align: center;
+    margin-left: 60px;
+    margin-top: 20px;
   }
 }
 
@@ -299,7 +317,8 @@
   line-height: 18px;
 
   @media (min-width: @desktop-width) {
-    width: 694px;
+    width: 700px;
+    min-height: 140px;
   }
 
   &:hover {
@@ -335,6 +354,10 @@
 
   @media (min-width: @desktop-width) {
     margin-left: 174px;
+  }
+
+  &:focus {
+    outline: 2px solid @aqua;
   }
 }
 
@@ -377,6 +400,8 @@
 
   @media (min-width: @desktop-width) {
     max-width: 700px;
+    margin-top: 5px;
+    margin-bottom: 12px;
   }
 
   &:last-child {
