@@ -151,6 +151,7 @@ export const build = gulp.series(
   sprite,
   webpImages
   ),
+
   );
 
 // Default
