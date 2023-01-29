@@ -136,3 +136,46 @@
     color: @dark;
   }
 }
+////////////////////////////////////////////////////
+
+.modal__checkbox-button {
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  display: block;
+  padding: 18px 22px;
+  box-sizing: border-box;
+  color: @dark;
+
+  text-align: center;
+
+  width: 100%;
+
+  .text-settings ();
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+
+  &:hover {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
+}
+
+.modal__checkbox-button-container {
+  display: flex;
+
+  margin-bottom: 31px;
+}
+
+.modal__chekbox-label {
+  flex-grow: 1;
+  margin-right: 7px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.modal__chekbox {
+  &:checked + .modal__checkbox-button {
+    border: 2px solid @aqua-smoth;
+  }
+}
