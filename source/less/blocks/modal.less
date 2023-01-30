@@ -63,53 +63,6 @@
   margin-bottom: 21.5px;
 }
 
-.modal__button-list {
-  display: flex;
-  justify-content: space-between;
-
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
-  margin-bottom: 31px;
-}
-
-.modal__button-item {
-  flex-grow: 1;
-  margin-right: 7px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.modal__button {
-  padding: 18px 22px;
-  border: 2px solid @grey-border;
-
-  text-align: center;
-
-  width: 100%;
-
-  .text-settings ();
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 16px;
-
-
-  &:hover {
-    border: 2px solid rgba(68, 68, 68, 0.3);
-  }
-
-  &:active {
-    border: 2px solid @aqua-smoth;
-  }
-
-  &--active {
-    border: 2px solid @aqua-smoth;
-  }
-}
-
 
 .modal__button-add {
   .text-settings ();
@@ -117,6 +70,7 @@
   font-size: 17px;
   line-height: 16px;
   text-align: center;
+  border: 0;
 
   width: 100%;
 
@@ -136,7 +90,7 @@
     color: @dark;
   }
 }
-////////////////////////////////////////////////////
+
 
 .modal__checkbox-button {
   border: 2px solid rgba(68, 68, 68, 0.1);
@@ -177,5 +131,13 @@
 .modal__chekbox {
   &:checked + .modal__checkbox-button {
     border: 2px solid @aqua-smoth;
+  }
+
+  &:focus + .modal__checkbox-button {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:disabled + .modal__checkbox-button {
+    opacity: 0.1;
   }
 }
