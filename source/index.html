@@ -267,11 +267,23 @@
         <div class="modal__wrapper">
           <h2 class="modal__title">ДОБАВИТЬ В КОРЗИНУ</h2>
           <span class="modal__text">Выберите размер:</span>
-            <ul class="modal__button-list">
-              <li class="modal__button-item"><button class="modal__button modal__button--active">S</button></li>
-              <li class="modal__button-item"><button class="modal__button">M</button></li>
-              <li class="modal__button-item"><button class="modal__button">L</button></li>
-            </ul>
+          <div class="modal__checkbox-button-container">
+                <label class="modal__chekbox-label">
+                  <input type="checkbox" class="modal__chekbox visually-hidden">
+                  <span class="modal__checkbox-button">S</span>
+                </label>
+
+                <label class="modal__chekbox-label">
+                  <input type="checkbox" class="modal__chekbox visually-hidden">
+                  <span class="modal__checkbox-button">M</span>
+                </label>
+
+                <label class="modal__chekbox-label">
+                  <input type="checkbox" class="modal__chekbox visually-hidden">
+                  <span class="modal__checkbox-button">L</span>
+                </label>
+          </div>
+
             <button class="modal__button-add">ДОБАВИТЬ</button>
         </div>
       </div>

@@ -61,8 +61,6 @@
 
 
   &--flower {
-    grid-area: f;
-
     &::before {
       content: "";
       position: absolute;
@@ -75,8 +73,6 @@
   }
 
   &--money {
-    grid-area: m;
-
     @media (max-width: @mobile-only) {
       padding-top: 53px;
     }
@@ -93,7 +89,9 @@
   }
 
   &--heart {
-    grid-area: h;
+    grid-column: 1/2;
+    grid-row: 3/4;
+
 
     &::before {
       content: "";
@@ -107,7 +105,9 @@
   }
 
   &--yarn {
-    grid-area: y;
+    grid-column: 2/3;
+    grid-row: 1/2;
+
 
     @media (max-width: @mobile-only) {
       padding-top: 53px;
@@ -125,8 +125,6 @@
   }
 
   &--rocket {
-    grid-area: r;
-
     @media (max-width: @mobile-only) {
       padding-top: 52px;
     }
@@ -143,8 +141,6 @@
   }
 
   &--gift {
-    grid-area: g;
-
     @media (max-width: @mobile-only) {
       padding-top: 53px;
     }
@@ -170,10 +166,6 @@
   @media (min-width: @tablets-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "f y"
-      "m r"
-      "h g";
   }
 
   @media (min-width: @desktop-width) {
